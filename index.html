@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d0a06" />
+    <meta name="description" content="Pupusas Doña Rosa — Auténtica pupusería salvadoreña. Pupusas hechas a mano en comal, con maíz fresco y rellenos tradicionales." />
+    <title>Doña Rosa · Pupusería Salvadoreña</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header" id="inicio">
+      <nav class="nav container">
+        <a class="brand" href="#inicio" aria-label="Doña Rosa inicio">
+          <svg class="brand-logo" width="42" height="42" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="23" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+            <path d="M24 6 C16 6 12 13 12 20 C12 28 16 34 24 34 C32 34 36 28 36 20 C36 13 32 6 24 6 Z" fill="currentColor"/>
+            <path d="M14 20 Q19 16 24 20 Q29 24 34 20" stroke="#0d0a06" stroke-width="1.5" fill="none" opacity="0.4"/>
+            <path d="M14 24 Q19 20 24 24 Q29 28 34 24" stroke="#0d0a06" stroke-width="1.5" fill="none" opacity="0.4"/>
+            <ellipse cx="24" cy="36" rx="7" ry="3" fill="currentColor" opacity="0.2"/>
+            <path d="M18 40 L30 40" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+          </svg>
+          <span class="brand-text">Doña Rosa</span>
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="#menu">Pupusas</a>
+          <a href="#proceso">El Proceso</a>
+          <a href="#historia">Historia</a>
+          <a href="#contacto">Visitanos</a>
+        </div>
+        <div class="nav-right">
+          <button class="cart-button" id="cartButton" type="button" aria-label="Abrir carrito">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <b id="cartCount">0</b>
+          </button>
+          <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú">
+            <span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="https://images.pexels.com/photos/33490827/pexels-photo-33490827.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-left">
+          <span class="hero-eyebrow" data-reveal>
+            <span class="pulse-dot"></span> Abierto ahora · San Salvador
+          </span>
+          <h1 data-reveal data-delay="100">
+            PUPUSAS<br />
+            <span class="hero-h1-accent">HECHAS A MANO</span>
+          </h1>
+          <p data-reveal data-delay="200">
+            Maíz fresco, queso derretido y el comal bien caliente. La pupusa salvadoreña como tiene que ser: dorada, gruesa y con el relleno que se sale.
+          </p>
+          <div class="hero-cta" data-reveal data-delay="300">
+            <a href="#menu" class="btn-primary">Ver las pupusas <span class="arrow">→</span></a>
+            <a href="#proceso" class="btn-outline">Cómo las hacemos</a>
+          </div>
+          <div class="hero-ratings" data-reveal data-delay="400">
+            <div class="rating-item">
+              <span class="rating-stars">★★★★★</span>
+              <strong>4.9</strong>
+              <small>2,300+ reseñas</small>
+            </div>
+            <div class="rating-divider"></div>
+            <div class="rating-item">
+              <strong class="rating-big">15</strong>
+              <small>años palmoteando masa</small>
+            </div>
+            <div class="rating-divider"></div>
+            <div class="rating-item">
+              <strong class="rating-big">48</strong>
+              <small>pupusas por hora</small>
+            </div>
+          </div>
+        </div>
+        <div class="hero-right" data-reveal data-delay="300">
+          <div class="hero-card">
+            <img src="https://images.pexels.com/photos/12276364/pexels-photo-12276364.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Pupusas salvadoreñas en mesa" />
+            <div class="hero-card-label">
+              <strong>Recién del comal</strong>
+              <small>Listas en 15 min</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>Deslizá</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>PUPUSA DE QUESO ✦ PUPUSA DE FRIJOL ✦ PUPUSA REVUELTA ✦ PUPUSA DE LOROCO ✦ PUPUSA DE CHICHARRÓN ✦ PUPUSA DE ESPINACA ✦ CURTIDO ARTESANAL ✦ SALSA PICANTE ✦ </span>
+        <span>PUPUSA DE QUESO ✦ PUPUSA DE FRIJOL ✦ PUPUSA REVUELTA ✦ PUPUSA DE LOROCO ✦ PUPUSA DE CHICHARRÓN ✦ PUPUSA DE ESPINACA ✦ CURTIDO ARTESANAL ✦ SALSA PICANTE ✦ </span>
+      </div>
+    </div>
+
+    <!-- MENU -->
+    <section class="menu-section container" id="menu">
+      <div class="section-head">
+        <div data-reveal>
+          <span class="section-eyebrow">Nuestras pupusas</span>
+          <h2>Elegí tus<br /><span class="text-gold">favoritas.</span></h2>
+        </div>
+        <p data-reveal data-delay="100">Cada pupusa se palmotea a mano y se dora en comal. Del maíz al plato, sin atajos. Pedí por unidad o por orden de tres.</p>
+      </div>
+      <div class="category-tabs" id="categoryTabs" role="tablist">
+        <button class="tab active" data-category="todas" type="button">Todas</button>
+        <button class="tab" data-category="clasicas" type="button">Clásicas</button>
+        <button class="tab" data-category="especiales" type="button">Especiales</button>
+        <button class="tab" data-category="vegetarianas" type="button">Vegetarianas</button>
+        
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process-section" id="proceso">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <span class="section-eyebrow gold">Del grano al comal</span>
+          <h2 class="light">5 pasos. Cero<br /><span class="text-gold">atasjos.</span></h2>
+        </div>
+        <div class="steps">
+          <div class="step" data-reveal>
+            <div class="step-num">01</div>
+            <div class="step-img"><img src="https://images.pexels.com/photos/37663511/pexels-photo-37663511.jpeg?auto=compress&cs=tinysrgb&h=500&w=500" alt="Selección de maíz" /></div>
+            <h3>Maíz seleccionado</h3>
+            <p>Maíz blanco cocido y molido al momento. La base de todo.</p>
+          </div>
+          <div class="step" data-reveal data-delay="100">
+            <div class="step-num">02</div>
+            <div class="step-img"><img src="https://images.pexels.com/photos/5737840/pexels-photo-5737840.jpeg?auto=compress&cs=tinysrgb&h=500&w=500" alt="Formando la masa" /></div>
+            <h3>Masa formada</h3>
+            <p>Se hace la bola, se abre y se rellena generosamente.</p>
+          </div>
+          <div class="step" data-reveal data-delay="200">
+            <div class="step-num">03</div>
+            <div class="step-img"><img src="https://images.pexels.com/photos/16965368/pexels-photo-16965368.jpeg?auto=compress&cs=tinysrgb&h=500&w=500" alt="Palmoteo a mano" /></div>
+            <h3>Palmoteo a mano</h3>
+            <p>Se aplana entre las palmas hasta lograr el disco perfecto.</p>
+          </div>
+          <div class="step" data-reveal data-delay="300">
+            <div class="step-num">04</div>
+            <div class="step-img"><img src="https://images.pexels.com/photos/36971424/pexels-photo-36971424.jpeg?auto=compress&cs=tinysrgb&h=500&w=500" alt="Comal al fuego" /></div>
+            <h3>Comal al fuego</h3>
+            <p>Se dora por ambos lados en comal caliente. El aroma lo dice todo.</p>
+          </div>
+          <div class="step" data-reveal data-delay="400">
+            <div class="step-num">05</div>
+            <div class="step-img"><img src="https://images.pexels.com/photos/12276358/pexels-photo-12276358.jpeg?auto=compress&cs=tinysrgb&h=500&w=500" alt="Servida con curtido" /></div>
+            <h3>Curtido y salsa</h3>
+            <p>Se sirve con curtido de repollo y salsa de tomate casera.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PUPUSA -->
+    <section class="featured-section container">
+      <div class="featured-card" data-reveal>
+        <div class="featured-img">
+          <img src="https://images.pexels.com/photos/33490827/pexels-photo-33490827.jpeg?auto=compress&cs=tinysrgb&h=800&w=800" alt="Pupusa revuelta" />
+          <div class="featured-badge">LA MÁS PEDIDA</div>
+        </div>
+        <div class="featured-info">
+          <span class="section-eyebrow">La estrella de la casa</span>
+          <h2>Revuelta de<br />Doña Rosa.</h2>
+          <p>Queso fresco, frijol molido y chicharrón en una sola pupusa. Dorada en comal, servida humeante con curtido crujiente y salsa picante. La que pide todo el mundo, la que vuelve a todo el mundo.</p>
+          <div class="featured-meta">
+            <div class="meta-stat"><strong>$2.50</strong><span>la unidad</span></div>
+            <div class="meta-stat"><strong>3 por $6.50</strong><span>la orden</span></div>
+          </div>
+          <a href="#menu" class="btn-primary">Agregar a mi orden <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORY -->
+    <section class="history-section container" id="historia">
+      <div class="history-photos" data-reveal>
+        <div class="history-main">
+          <img src="https://images.pexels.com/photos/37663511/pexels-photo-37663511.jpeg?auto=compress&cs=tinysrgb&h=900&w=750" alt="Haciendo tortillas a mano" />
+        </div>
+        <div class="history-sub">
+          <img src="https://images.pexels.com/photos/16965368/pexels-photo-16965368.jpeg?auto=compress&cs=tinysrgb&h=500&w=400" alt="Chef haciendo tortillas" />
+        </div>
+        <div class="history-badge">
+          <strong>2010</strong>
+          <span>Donde empezó todo</span>
+        </div>
+      </div>
+      <div class="history-copy">
+        <span class="section-eyebrow" data-reveal>Nuestra historia</span>
+        <h2 data-reveal data-delay="100">Un comal, una<br /><span class="text-gold">receta de abuela.</span></h2>
+        <p data-reveal data-delay="200">Doña Rosa llegó de San Vicente con una receta heredada de su abuela. Empezó con tres pupusas y un comal de leña en un rinconcito del mercado. La gente hacía fila desde las seis de la mañana.</p>
+        <p data-reveal data-delay="300">Quince años después, sigue palmoteando cada masa con la misma paciencia. No es solo comida: es el sabor que recuerda a casa, al domingo en familia, a la pupusería del barrio.</p>
+        <div class="signature" data-reveal data-delay="400">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <path d="M24 42 C18 42 12 36 12 28 C12 20 18 14 24 14 C30 14 36 20 36 28 C36 36 30 42 24 42 Z" stroke="#e8a838" stroke-width="1.5" fill="none"/>
+            <path d="M18 28 Q24 22 30 28" stroke="#e8a838" stroke-width="1.5" fill="none"/>
+            <circle cx="24" cy="28" r="3" fill="#e8a838"/>
+          </svg>
+          <div>
+            <strong>Doña Rosa Mendoza</strong>
+            <small>Fundadora y maestra pupusera</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <span class="section-eyebrow gold">Lo que dicen</span>
+          <h2 class="light">La gente vuelve.<br /><span class="text-gold">Siempre vuelve.</span></h2>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial" data-reveal>
+            <div class="t-stars">★★★★★</div>
+            <p>"Las pupusas de Doña Rosa saben exactamente como las de mi abuela. El curtido es perfecto y la salsa pica justo. Un pedazo de El Salvador."</p>
+            <div class="t-author"><strong>Carlos Martínez</strong><span>Cliente desde 2018</span></div>
+          </div>
+          <div class="testimonial" data-reveal data-delay="100">
+            <div class="t-stars">★★★★★</div>
+            <p>"Pedí la revuelta y me transportó a San Salvador en el primer bocado. El queso estira al partirla. Auténtico sabor, sin pretensiones."</p>
+            <div class="t-author"><strong>María Hernández</strong><span>Reseña en Google</span></div>
+          </div>
+          <div class="testimonial" data-reveal data-delay="200">
+            <div class="t-stars">★★★★★</div>
+            <p>"No soy salvadoreño pero entendí la obsesión. La masa dorada, el relleno que se sale... increíble. Ya vengo cada semana sin falta."</p>
+            <div class="t-author"><strong>James O'Brien</strong><span>Cliente nuevo</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contacto">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info" data-reveal>
+            <span class="section-eyebrow gold">Visitanos o pedí</span>
+            <h2 class="light">Vení por las <span class="text-gold">pupusas.</span></h2>
+            <div class="contact-items">
+              <div class="contact-item">
+                <span class="ci-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <div><strong>Ubicación</strong><p>Av. Las Magnolias #45, Col. Escalón<br/>San Salvador, El Salvador</p></div>
+              </div>
+              <div class="contact-item">
+                <span class="ci-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </span>
+                <div><strong>Horario</strong><p>Lun–Vie · 7AM – 9PM<br/>Sáb–Dom · 8AM – 10PM</p></div>
+              </div>
+              <div class="contact-item">
+                <span class="ci-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <div><strong>Pedí por WhatsApp</strong><p>+503 7000-0000<br/>Delivery 30–45 min</p></div>
+              </div>
+            </div>
+            <a href="https://wa.me/50370000000" target="_blank" rel="noreferrer" class="btn-primary">Escribinos por WhatsApp <span class="arrow">→</span></a>
+          </div>
+          <div class="contact-visual" data-reveal data-delay="200">
+            <img src="https://images.pexels.com/photos/9461797/pexels-photo-9461797.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Entrega de un pedido a domicilio" />
+            <div class="contact-tag"><strong>Delivery</strong><small>30–45 min</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a class="brand" href="#inicio">
+          <svg class="brand-logo" width="42" height="42" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="23" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+            <path d="M24 6 C16 6 12 13 12 20 C12 28 16 34 24 34 C32 34 36 28 36 20 C36 13 32 6 24 6 Z" fill="currentColor"/>
+            <path d="M14 20 Q19 16 24 20 Q29 24 34 20" stroke="#0d0a06" stroke-width="1.5" fill="none" opacity="0.4"/>
+            <path d="M14 24 Q19 20 24 24 Q29 28 34 24" stroke="#0d0a06" stroke-width="1.5" fill="none" opacity="0.4"/>
+            <ellipse cx="24" cy="36" rx="7" ry="3" fill="currentColor" opacity="0.2"/>
+            <path d="M18 40 L30 40" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+          </svg>
+          <span class="brand-text">Doña Rosa</span>
+        </a>
+        <p>Pupusería salvadoreña · Maíz, queso y corazón.</p>
+        <div class="footer-links">
+          <a href="https://wa.me/50370000000" target="_blank" rel="noreferrer">WhatsApp →</a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram →</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Pupusas Doña Rosa · San Salvador, El Salvador</span>
+        <span>Hecho con ♥ para los amantes de la pupusa</span>
+      </div>
+    </footer>
+
+    <!-- CART DRAWER -->
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="drawer-backdrop" id="drawerBackdrop"></div>
+      <div class="drawer-panel">
+        <div class="drawer-header">
+          <h2>Mi orden</h2>
+          <button class="close-button" id="closeCart" type="button" aria-label="Cerrar carrito">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-empty" id="cartEmpty">
+          <svg width="56" height="56" viewBox="0 0 48 48" fill="none" opacity="0.3"><path d="M24 6 C16 6 12 13 12 20 C12 28 16 34 24 34 C32 34 36 28 36 20 C36 13 32 6 24 6 Z" fill="currentColor"/></svg>
+          <h3>Tu orden está vacía</h3>
+          <p>Agregá unas pupusas para empezar.</p>
+        </div>
+        <div class="drawer-footer" id="drawerFooter">
+          <div class="checkout-fields">
+            <label>Nombre<input id="customerName" type="text" placeholder="Tu nombre" autocomplete="name" /></label>
+            <label>Teléfono<input id="customerPhone" type="tel" placeholder="+503 0000-0000" autocomplete="tel" /></label>
+            <label class="full-label">Dirección<input id="customerAddress" type="text" placeholder="Calle, número, referencia" autocomplete="street-address" /></label>
+            <label class="full-label">Pago
+              <select id="paymentMethod">
+                <option value="Efectivo contra entrega">Efectivo contra entrega</option>
+                <option value="Transferencia">Transferencia</option>
+              </select>
+            </label>
+          </div>
+          <div class="total-row"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+          <button class="btn-primary full-width" id="orderButton" type="button">Confirmar por WhatsApp <span class="arrow">→</span></button>
+          <small>Confirmamos disponibilidad y total final por WhatsApp.</small>
+        </div>
+      </div>
+    </aside>
+
+    <div class="toast" id="toast" role="status"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <script type="module" src="./src/script.js"></script>
+  </body>
+</html>
